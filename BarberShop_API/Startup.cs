@@ -67,6 +67,8 @@ namespace BarberShop_API
             });
 
             services.AddScoped<ICustomerRepository, CustomerRepository>();
+            services.AddScoped<IAppointmentRepository, AppointmentRepository>();
+            services.AddScoped<ISalonServiceRepository, SalonServiceRepository>();
 
             // After installing 'Microsoft.AspNetCore.Mvc.NewtonsoftJson' package
             // to include related records (example -> Appointments and its Customer and SalonService)

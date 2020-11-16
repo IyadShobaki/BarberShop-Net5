@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BarberShop_API</name>
+    </assembly>
+    <members>
+        <member name="T:BarberShop_API.Controllers.AppointmentController">
+            <summary>
+            Endpoint used to interact with Appointments in Barber Shop Database
+            </summary>
+        </member>
+        <member name="M:BarberShop_API.Controllers.AppointmentController.GetAppointments">
+            <summary>
+            Get All Appointments
+            </summary>
+            <returns>List of Appointments</returns>
+        </member>
+        <member name="M:BarberShop_API.Controllers.AppointmentController.GetAppointmentById(System.Int32)">
+            <summary>
+            Get Appointment By Id
+            </summary>
+            <param name="id"></param>
+            <returns>Appointment record</returns>
+        </member>
+        <member name="M:BarberShop_API.Controllers.AppointmentController.CreateUpdate(BarberShop_Models.DTOs.AppointmentDTO)">
+            <summary>
+            Create or Update Appointment
+            </summary>
+            <param name="appointmentDTO"></param>
+            <returns>Appointment Info</returns>
+        </member>
+        <member name="M:BarberShop_API.Controllers.AppointmentController.Delete(System.Int32)">
+            <summary>
+            Delete a customer record
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BarberShop_API.Controllers.CustomerController">
+            <summary>
+            Endpoint used to interact with the Customers in Barber Shop Database
+            </summary>
+        </member>
+        <member name="M:BarberShop_API.Controllers.CustomerController.GetCustomers">
+            <summary>
+            Get All Customers
+            </summary>
+            <returns>List of Customers</returns>
+        </member>
+        <member name="M:BarberShop_API.Controllers.CustomerController.GetCustomerById(System.Int32)">
+            <summary>
+            Get Customer By Id
+            </summary>
+            <param name="id"></param>
+            <returns>Customer record</returns>
+        </member>
+        <member name="M:BarberShop_API.Controllers.CustomerController.CreateUpdate(BarberShop_Models.DTOs.CustomerDTO)">
+            <summary>
+            Create or update a customer
+            </summary>
+            <param name="customerDTO"></param>
+            <returns>Customer Info</returns>
+        </member>
+        <member name="M:BarberShop_API.Controllers.CustomerController.Delete(System.Int32)">
+            <summary>
+            Delete a customer record
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
