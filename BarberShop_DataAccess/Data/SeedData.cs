@@ -21,6 +21,9 @@ namespace BarberShop_DataAccess.Data
             {
                 var user = new ApplicationUser
                 {
+                    FirstName = "Admin",
+                    LastName = "BarberShop",
+                    PhoneNumber = "1112223333",
                     UserName = "admin@barbershop.com",
                     Email = "admin@barbershop.com"
                 };

@@ -31,7 +31,7 @@
         </member>
         <member name="M:BarberShop_API.Controllers.AppointmentController.Delete(System.Int32)">
             <summary>
-            Delete a customer record
+            Delete an appointment record
             </summary>
             <param name="id"></param>
             <returns></returns>
@@ -66,6 +66,50 @@
             Delete a customer record
             </summary>
             <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BarberShop_API.Controllers.SalonServiceController">
+            <summary>
+            Endpoint used to interact with the SalonServices in Barber Shop Database
+            </summary>
+        </member>
+        <member name="M:BarberShop_API.Controllers.SalonServiceController.GetServices">
+            <summary>
+            Get All Salon Services
+            </summary>
+            <returns>List of the Salon Services</returns>
+        </member>
+        <member name="M:BarberShop_API.Controllers.SalonServiceController.GetServiceById(System.Int32)">
+            <summary>
+            Get Salon Service By Id
+            </summary>
+            <param name="id"></param>
+            <returns>Salon Service record</returns>
+        </member>
+        <member name="M:BarberShop_API.Controllers.SalonServiceController.CreateUpdate(BarberShop_Models.DTOs.SalonServiceDTO)">
+            <summary>
+            Create or Update a salon service
+            </summary>
+            <param name="serviceDTO"></param>
+            <returns>Salon Service Info</returns>
+        </member>
+        <member name="M:BarberShop_API.Controllers.SalonServiceController.Delete(System.Int32)">
+            <summary>
+            Delete a salon service record
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BarberShop_API.Controllers.UserController">
+            <summary>
+            Endpoint used to interact with the ApplicationUser(IdentityUser) in Barber Shop Database
+            </summary>
+        </member>
+        <member name="M:BarberShop_API.Controllers.UserController.Login(BarberShop_Models.DTOs.LoginDTO)">
+            <summary>
+            User Login Endpoint
+            </summary>
+            <param name="loginDTO"></param>
             <returns></returns>
         </member>
     </members>

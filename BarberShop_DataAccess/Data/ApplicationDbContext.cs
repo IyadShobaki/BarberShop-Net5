@@ -20,14 +20,18 @@ namespace BarberShop_DataAccess.Data
         //public DbSet<AppointmentSalonService> AppointmentSalonServices { get; set; }
 
 
-        //protected override void OnModelCreating(ModelBuilder builder)
-        //{
-        //    base.OnModelCreating(builder);
-        //    // Configure fluent API
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+            // Configure fluent API
 
-        //    // AppointmentSalonService composite key
-        //    builder.Entity<AppointmentSalonService>()
-        //        .HasKey(ass => new { ass.Appointment_Id, ass.SalonService_Id });
-        //}
+            // AppointmentSalonService composite key
+            //builder.Entity<AppointmentSalonService>()
+            //    .HasKey(ass => new { ass.Appointment_Id, ass.SalonService_Id });
+
+            builder.Entity<ApplicationUser>().Property(a => a.PhoneNumber)
+                                            .IsRequired()
+                                            .HasMaxLength(15);
+        }
     }
 }
